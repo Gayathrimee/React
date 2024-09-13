@@ -1,0 +1,46 @@
+/*
+
+Components:
+
+Components are self-contained units that encapsulate(means pothiyuka) a piece of user interface(ui) and its associated logic.
+
+Characteristics:
+. Encapsulation
+. Reusability
+. Composition
+
+Types: 
+. Functional: Are simpler components defined as js fns. They typically receive props(properties) and retun jsx(in react) or template(in Vue) to render the UI
+. Class: Are more complex components that extend a base class(like react.component.in React). They have lifecycle methods and manage their own state.
+.Stateful vs. Stateless Components:  Stateful components manage their own state, while stateless components rely entirely on props and do not manage state.
+
+Props and State:
+. Props: Properties, are read-only inputs passed to components from their parent components. They allows us to pass data and event handlers to child components.
+
+<button label = "Click me"/>   // passing props to a component
+
+. State: State is used to store data that can change over time and affect how the component renders. State is managed internally by the component.
+
+class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+
+  increment = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+
+  render() {
+    return (
+      <div>
+        <p>Count: {this.state.count}</p>
+        <button onClick={this.increment}>Increment</button>
+      </div>
+    );
+  }
+}
+
+===========================================================
+
+ */
