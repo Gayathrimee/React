@@ -6,7 +6,7 @@
 // * what? :
 // A pattern where a fn takes a component as an argument and returns a new component. 
 
-// patter: const NewComponent = higherOrderComponent(originalComponent)
+// pattern: const NewComponent = higherOrderComponent(originalComponent)
 //     const EnhancedComponent = higherOrderComponent(originalComponent)
 
 // eg: const IronMan = withSuit (TonyStark)
