@@ -7,10 +7,14 @@ const reducer = (state, action) => {
 
 // instead of newState;
     switch(action){
-        case 'increment': return state + 1
-        case 'decrement': return state - 1
-        case 'reset': return initialState
-        default : return state
+        case 'increment': 
+          return state + 1
+        case 'decrement': 
+          return state - 1
+        case 'reset': 
+          return initialState
+        default : 
+          return state
     }
 }
 
@@ -27,4 +31,4 @@ function CounterOne() {
   )
 }
 
-export default CounterOne
+export default CounterOne                                  
