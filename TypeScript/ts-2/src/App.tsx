@@ -14,6 +14,12 @@ import { Input } from './Components/8-input';
 
 import { Container } from './Components/9-Container';
 
+
+import { ThemeContextProvider } from './Components/2-Context/ThemeContext';
+import { Box } from './Components/2-Context/Box';
+import { UserContextProvider } from './Components/2-Context/UserContext';
+import { User } from './Components/1-State/4-User';
+
 function App() {
 
   // const personName  = {
@@ -59,8 +65,16 @@ function App() {
       <Input value='' handleChange={(event) => console.log(event)}/> */}
 
 
-      <Container styles={{border: '1px solid black', padding:'1rem'}}/>
+      {/* <Container styles={{border: '1px solid black', padding:'1rem'}}/> */}
 
+      {/* <ThemeContextProvider>
+      <Box />
+      </ThemeContextProvider> */}
+
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
+      
     </div>
   );
 }

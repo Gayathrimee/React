@@ -1,9 +1,19 @@
+import {Name} from './10-person.types'
+
+// type PersonListProps = {
+//     names: {
+//         first: string
+//         last:string
+//     } []
+// }
+
+// instead this |^
+
 type PersonListProps = {
-    names: {
-        first: string
-        last:string
-    } []
+    names: Name[]
 }
+// use this |^
+
 export const PersonList = (props: PersonListProps) => {
     return (
         <div>
