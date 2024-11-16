@@ -16,14 +16,11 @@ export const User = () => {
             userContext.setUser(null)
         }
     }
-
+                                   
     return (
         <div>
             <button onClick={handleLogin}>Login</button>
             <button onClick={handleLogout}>Logout</button>
-            {/* <div>User name is {user?.name} </div>
-                <div>User email is {user?.email}</div> */}    {/* while using null */}
-
             <div>User name is {userContext?.user?.name} </div>
             <div>User email is {userContext?.user?.email}</div>
         </div>

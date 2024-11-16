@@ -54,3 +54,30 @@ steps:
 3. Conditionally render the text inside the div tag. 
 4. Define the handler fn. 
 -> and this is our fully functional conditonal components. We got it done withour writing a single line of ts code. 
+
+
+* COURSE SUMMARY
+
+=> React 
+- Basice & Advanced Props 
+- Events & Styles 
+- Default Hooks
+    1 - useState with 
+        a- Default value
+        b- future value 
+    2 - useReducer with 
+        a- Default value
+        b- future value 
+- how to write Context API with and initial value and future value 
+- UseRef Hook 
+- typing components to help work on projects that are a few years old. 
+
+
+=> React and TypeScript 
+- Passing a Component as a prop 
+- Generic Props 
+- Restricitng Props 
+- Template Literals & the exclude utility type
+- Wrapping HTML Elements and Omit utility type
+- How to extract a component prop types 
+- and finally how to type a Polymorphic Component in React 
